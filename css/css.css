@@ -10,6 +10,20 @@
   box-sizing: border-box;
 }
 
+
+/* Farvepalette (De forskellige farver til hjemmesiden*/
+/* Ved at skrive --farvenavn: #fff; så kan man vælge den farve, man vil bruge */
+:root {
+  --gammelrosa: #ff9bf2;
+  --flaskegrøn: #155a2a; 
+  --kongeblå: #0a2e8f;
+  --rød: #dc2525; 
+  --gul: #eeeb1a;
+  --baggrund: #0f0e0e;
+}
+
+
+/* GENERAL INFO */
 /* bbrug cmd+shift+7 så laver jeg en note i både index og css */
 /* shift+option 8/9 som er parentes, så kan man lave de bølgede parentes */
 /* når man skal lave lidt desgin på hjemmesiden, skal man skrive body og så designe ting inde i parentesen, så man laver regler for ens body inde i index filen */
@@ -31,6 +45,11 @@ h1,h2 {
 p{
   padding: 23px;
 }
+/* Sådan laves en color variable som man kan sætte fx body, eller de andre sektioner*/
+body { background-color: var(--baggrund);
+  color: var(--flaskegrøn);
+
+}
 
 /* Use your variables on elements along these lines */
 /*
@@ -39,6 +58,34 @@ p{
   --backgr: #000;
 }
 
+
+
+
+/* Styles til navigation */
+
+/* Sticky Navigation ("topklisteret") */
+
+/* Gøre logoet mindre */
+nav a img {
+  height: 99px;
+  width: auto; 
+}
+
+nav {
+  position: sticky;
+  top: 0;
+ z-index: 100;
+ /* Color: er altid skriftens farve */
+ color: var(--flaskegrøn); 
+ background-color: var(--baggrund);
+  
+}
+
+nav a {
+    color: var(--flaskegrøn);
+}
+
+
 --- You can use the variables like this ---
 
  main {
@@ -46,3 +93,9 @@ p{
    background-color: var(--backgr);
  }
 */
+
+/* Kolonne indstillinger, som er samlet som en klasse og flexbox */
+.flexdemo {
+  display: flex;
+  padding: 23px;
+}
