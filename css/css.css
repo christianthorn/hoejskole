@@ -1,0 +1,48 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* bbrug cmd+shift+7 så laver jeg en note i både index og css */
+/* shift+option 8/9 som er parentes, så kan man lave de bølgede parentes */
+/* når man skal lave lidt desgin på hjemmesiden, skal man skrive body og så designe ting inde i parentesen, så man laver regler for ens body inde i index filen */
+/* Husk at slutte en regl med semi kolon, så siger man at det er slut, og det her gør vi, ellers kan den nogle gange lave fejl */
+
+body {
+  background-color:darkorange;
+
+}
+
+img {
+  width: 100%;
+}
+
+h1,h2 {
+  text-align: center;
+}
+
+p{
+  padding: 23px;
+}
+
+/* Use your variables on elements along these lines */
+/*
+:root {
+  --contrast: lime;
+  --backgr: #000;
+}
+
+--- You can use the variables like this ---
+
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+*/
